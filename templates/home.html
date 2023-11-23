@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input Text Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 20px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        #output {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Enter Text</h2>
+    <form action="/sentiment_analysis_prediction" method="post">
+
+      <input type="textInput" id="textInput" name ='textInput' placeholder="Enter text...">
+      <!-- <label for="text">Enter Text</label> -->
+      <input type="submit">
+    </form>
+    
+    <h2>{{ text }}</h2>
+    <h2>{{ sentiment}}</h2>
+    <div >
+    <img src="{{ image }}" alt="Image">
+    
+  </div>
+
+
+</body>
+</html>
